@@ -1,19 +1,17 @@
-import 'dart:developer' as developer;
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PalFirstRun {
-  // Singeton + Thread Safety Handler
-  factory PalFirstRun() => _singleton;
-  PalFirstRun._internal() {
-    developer.log('--PalFirstRun-- (Instance Created --> Singleton)');
-  }
-  static final PalFirstRun _singleton = PalFirstRun._internal();
+  // // Singeton + Thread Safety Handler
+  // factory PalFirstRun() => _singleton;
+  // PalFirstRun._internal() {
+  //   developer.log('--PalFirstRun-- (Instance Created --> Singleton)');
+  // }
+  // static final PalFirstRun _singleton = PalFirstRun._internal();
 
   ///---
   /// Check Key
   ///---
-  static const String _isFirstRunKey = 'is_first_run';
+  static const String isFirstRunKey = 'is_first_run';
 
   ///---
   /// Check app first run in the device
@@ -21,11 +19,11 @@ class PalFirstRun {
   static Future<bool> isFirstRun() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    if (prefs.getString(_isFirstRunKey) == 'false') {
-      return false;
-    } else {
-      prefs.setString(_isFirstRunKey, 'false');
+    if ((prefs.getString(isFirstRunKey) ?? 'true') != 'false') {
+      prefs.setString(isFirstRunKey, 'false');
       return true;
+    } else {
+      return false;
     }
   }
 
@@ -35,7 +33,7 @@ class PalFirstRun {
   static Future<bool> isFirstCall(String name) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    if (prefs.get(name) == 'false') {
+    if (prefs.getString(name) == 'false') {
       return false;
     } else {
       prefs.setString(name, 'false');
