@@ -1,12 +1,14 @@
+import 'dart:developer' as developer;
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PalFirstRun {
-  // // Singeton + Thread Safety Handler
-  // factory PalFirstRun() => _singleton;
-  // PalFirstRun._internal() {
-  //   developer.log('--PalFirstRun-- (Instance Created --> Singleton)');
-  // }
-  // static final PalFirstRun _singleton = PalFirstRun._internal();
+  // Singeton + Thread Safety Handler
+  factory PalFirstRun() => _singleton;
+  PalFirstRun._internal() {
+    developer.log('--PalFirstRun-- (Instance Created --> Singleton)');
+  }
+  static final PalFirstRun _singleton = PalFirstRun._internal();
 
   ///---
   /// Check Key
