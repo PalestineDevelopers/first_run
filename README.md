@@ -1,6 +1,6 @@
 # palestine_first_run
 
-## Part of [PalestineDevelopers](https://github.com/PalestineDevelopers/trusted_device)
+## Part of [PalestineDevelopers](https://github.com/PalestineDevelopers)
 
 Lightweight and easy check if the app runs for its first time, apply that to custom calls.
 
