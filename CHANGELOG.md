@@ -2,6 +2,10 @@
 
 * Improvements
 
+## 0.0.7
+
+* Test cases.
+
 ## 0.0.6
 
 * Rmove non-needed web code.
