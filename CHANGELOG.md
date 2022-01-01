@@ -2,6 +2,10 @@
 
 * Improvements
 
+## 0.0.9
+
+* Code Refactoring by maxzod.
+
 ## 0.0.7 | 0.0.8
 
 * Test cases.

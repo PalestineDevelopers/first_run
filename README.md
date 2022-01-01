@@ -61,5 +61,5 @@ And for the custom calls
 
 ```dart
 // First time (true), then (false)
-final bool isFirstAPICall = await PalFirstRun.isFirstCall('call_api');
+final bool isFirstAPICall = await PalFirstRun.isFirstRun('call_api');
 ```
