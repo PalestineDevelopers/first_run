@@ -4,27 +4,48 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('PalConnection', () {
-    const String testInitValues = 'if variables has start type';
-    const String testIsFirstRun = 'if isFirstRun return true only once';
-    const String testIsFirstCall = 'if isFirstCall return true only once';
-
+  setUpAll(() {
     WidgetsFlutterBinding.ensureInitialized();
-    SharedPreferences.setMockInitialValues(<String, Object>{});
-
-    test(testInitValues, () async {
-      expect(PalFirstRun.isFirstRunKey.runtimeType, String);
-      expect(PalFirstRun.isFirstRunKey, 'is_first_run');
+    SharedPreferences.setMockInitialValues(<String, Object>{
+      'bar': true,
+      'zee': 'true',
+      'xyz': '',
+      'abc': 66,
     });
+  });
+  test(
+    'the key value is the same',
+    () => expect(PalFirstRun.isFirstRunKey, 'is_first_run'),
+  );
+  test('it sees any value is true', () async {
+    expect(await PalFirstRun.isFirstRun('bar'), isFalse);
+    expect(await PalFirstRun.isFirstRun('zee'), isFalse);
+    expect(await PalFirstRun.isFirstRun('abc'), isFalse);
+    expect(await PalFirstRun.isFirstRun('xyz'), isFalse);
+  });
+  test('it checks for the app first run', () async {
+    expect(
+      await PalFirstRun.isFirstRun(),
+      isTrue,
+      reason: 'first run is true',
+    );
+    expect(
+      await PalFirstRun.isFirstRun(),
+      isFalse,
+      reason: 'because you checked before !',
+    );
+  });
 
-    test(testIsFirstRun, () async {
-      expect(await PalFirstRun.isFirstRun(), true);
-      expect(await PalFirstRun.isFirstRun(), false);
-    });
-
-    test(testIsFirstCall, () async {
-      expect(await PalFirstRun.isFirstCall('some_call'), true);
-      expect(await PalFirstRun.isFirstCall('some_call'), false);
-    });
+  test('it can support custom keys', () async {
+    expect(
+      await PalFirstRun.isFirstRun('foo'),
+      isTrue,
+      reason: 'foo first call is true',
+    );
+    expect(
+      await PalFirstRun.isFirstRun('foo'),
+      isFalse,
+      reason: 'because you checked on foo before !',
+    );
   });
 }

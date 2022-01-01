@@ -1,36 +1,21 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PalFirstRun {
-  ///---
-  /// Check Key
-  ///---
-  static const String isFirstRunKey = 'is_first_run';
+  /// * KEY
+  /// ! DO NOT CHANGE THE VALUE UNDER ANY CIRCUMSTANCES AT ALL
+  /// ! CHANGE THE VALUE WILL CAUSE UN EXPECTED BEHAVIOR FOR OLD USERS
+  static const isFirstRunKey = 'is_first_run';
 
   ///---
   /// Check app first run in the device
   ///---
-  static Future<bool> isFirstRun() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    if ((prefs.getString(isFirstRunKey) ?? 'true') != 'false') {
-      prefs.setString(isFirstRunKey, 'false');
-      return true;
-    } else {
-      return false;
+  static Future<bool> isFirstRun([String key = isFirstRunKey]) async {
+    final prefs = await SharedPreferences.getInstance();
+    final isFirstTime = prefs.get(key) == null;
+    if (isFirstTime) {
+      /// since its the first time , set the value to false;
+      prefs.setBool(key, false);
     }
-  }
-
-  ///---
-  /// Check app first calls something
-  ///---
-  static Future<bool> isFirstCall(String name) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    if (prefs.getString(name) == 'false') {
-      return false;
-    } else {
-      prefs.setString(name, 'false');
-      return true;
-    }
+    return isFirstTime;
   }
 }

@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
       final bool isFirstRun = await PalFirstRun.isFirstRun();
       developer.log(isFirstRun.toString());
 
-      final bool isFirstAPICall = await PalFirstRun.isFirstCall('call_api');
+      final bool isFirstAPICall = await PalFirstRun.isFirstRun('call_api');
       developer.log(isFirstAPICall.toString());
     });
   }
