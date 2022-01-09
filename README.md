@@ -4,13 +4,13 @@
 
 Lightweight and easy check if the app runs for its first time, apply that to custom calls.
 
-[![License](https://img.shields.io/github/license/PalestineDevelopers/first_run)](https://github.com/PalestineDevelopers)
-[![Pub](https://img.shields.io/badge/Palestine%20First%20Run-pub-blue)](https://pub.dev/packages/palestine_first_run)
-[![Example](https://img.shields.io/badge/Example-Ex-success)](https://pub.dev/packages/palestine_first_run/example)
+[![License](https://img.shields.io/github/license/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers)
+[![Pub](https://img.shields.io/badge/Palestine%20First%20Run-pub-blue?style=for-the-badge)](https://pub.dev/packages/palestine_first_run)
+[![Example](https://img.shields.io/badge/Example-Ex-success?style=for-the-badge)](https://pub.dev/packages/palestine_first_run/example)
 
-[![Fork](https://img.shields.io/github/forks/PalestineDevelopers/first_run?style=social)](https://github.com/PalestineDevelopers/first_run)
-[![Star](https://img.shields.io/github/stars/PalestineDevelopers/first_run?style=social)](https://github.com/PalestineDevelopers/first_run)
-[![Watch](https://img.shields.io/github/watchers/PalestineDevelopers/first_run?style=social)](https://github.com/PalestineDevelopers/first_run)
+[![GitHub release](https://img.shields.io/github/v/release/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run/releases)
+[![GitHub stars](https://img.shields.io/github/stars/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run)
+[![GitHub forks](https://img.shields.io/github/forks/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run)
 
 ---
 
