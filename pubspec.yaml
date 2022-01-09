@@ -1,6 +1,6 @@
 name: palestine_first_run
 description: Lightweight and easy check if the app runs for its first time, apply that to custom calls.
-version: 0.0.9
+version: 0.0.10
 homepage: https://github.com/msayed-net/PalestineDevelopers
 
 environment:

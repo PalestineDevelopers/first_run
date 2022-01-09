@@ -2,6 +2,10 @@
 
 * Improvements
 
+## 0.0.10
+
+* docs.
+
 ## 0.0.9
 
 * Code Refactoring by maxzod.

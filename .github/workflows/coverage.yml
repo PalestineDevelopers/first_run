@@ -1,4 +1,4 @@
-name: dart
+name: Dart CI - Coverage Test
 on:
   push:
     branches: [main]
