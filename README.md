@@ -8,14 +8,6 @@ Lightweight and easy check if the app runs for its first time, apply that to cus
 [![Pub](https://img.shields.io/badge/Palestine%20First%20Run-pub-blue?style=for-the-badge)](https://pub.dev/packages/palestine_first_run)
 [![Example](https://img.shields.io/badge/Example-Ex-success?style=for-the-badge)](https://pub.dev/packages/palestine_first_run/example)
 
-[![GitHub release](https://img.shields.io/github/v/release/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run/releases)
-[![GitHub stars](https://img.shields.io/github/stars/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run)
-[![GitHub forks](https://img.shields.io/github/forks/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run)
-
-[![License](https://img.shields.io/github/license/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers)
-[![Pub](https://img.shields.io/badge/Palestine%20First%20Run-pub-blue?style=for-the-badge)](https://pub.dev/packages/palestine_first_run)
-[![Example](https://img.shields.io/badge/Example-Ex-success?style=for-the-badge)](https://pub.dev/packages/palestine_first_run/example)
-
 [![PUB](https://img.shields.io/pub/v/palestine_first_run.svg?style=for-the-badge)](https://pub.dev/packages/palestine_first_run)
 [![GitHub release](https://img.shields.io/github/v/release/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run/releases)
 [![GitHub stars](https://img.shields.io/github/stars/PalestineDevelopers/first_run?style=for-the-badge)](https://github.com/PalestineDevelopers/first_run)
