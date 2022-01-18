@@ -22,6 +22,7 @@ Lightweight and easy check if the app runs for its first time, apply that to cus
 * [Features](#features)
 * [Getting started](#getting-started)
 * [Usage](#usage)
+* [Contributors](#contributors)
 
 ---
 
@@ -66,3 +67,7 @@ And for the custom calls
 // First time (true), then (false)
 final bool isFirstAPICall = await PalFirstRun.isFirstRun('call_api');
 ```
+
+## Contributors
+
+![Contributors](https://contrib.rocks/image?repo=palestinedevelopers/first_run)
